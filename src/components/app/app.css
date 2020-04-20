@@ -1,0 +1,11 @@
+.app {
+  margin: 10% auto;
+}
+
+#search {
+  margin-top: 2rem;
+}
+
+#search .col {
+  padding: 0;
+}

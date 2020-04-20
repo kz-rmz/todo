@@ -1,5 +1,5 @@
 .search-panel {
-  margin-top: 2rem;
+  flex-grow: 1;
 }
 
 .search-panel input {

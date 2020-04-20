@@ -2,6 +2,7 @@ import React from 'react';
 import ToDoList from '../todo-list';
 import AppHeader from '../app-header';
 import SearchPanel from '../search-panel';
+import ItemStatusFilter from '../item-status-filter';
 import './app.css';
 
 const App = () => {
@@ -13,11 +14,14 @@ const App = () => {
   ]
 
   return (
-    <div className="container col-md-6 col-xl-4">
-      <AppHeader />
-      <SearchPanel />
-      <ToDoList todos={todoData} />
-    </div>
+    <div className="col-md-6 app">
+      <AppHeader className="row" />
+      <div id="search" className="row">
+        <SearchPanel />
+        <ItemStatusFilter />
+      </div>
+      <ToDoList className="row" todos={todoData} />
+    </div >
   )
 }
 

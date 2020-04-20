@@ -3,7 +3,7 @@ import './search-panel.css';
 
 const SearchPanel = () => {
   return (
-    <div className="row search-panel">
+    <div className="col search-panel">
       <input type="text" placeholder="search" />
     </div>
   )

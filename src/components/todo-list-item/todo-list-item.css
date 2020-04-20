@@ -10,3 +10,12 @@
 .todo-list-item-btns .btn {
   margin-left: .25rem;
 }
+
+.important > .todo-list-item-label { 
+  font-weight: 600;
+  color: teal;
+}
+
+.done {
+  text-decoration: line-through;
+}

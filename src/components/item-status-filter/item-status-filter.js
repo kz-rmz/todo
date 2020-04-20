@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { Component } from 'react'
 
-function item-status - filter() {
-  return (
-    <div className="btn-group">
-      <button type='button'
-        className='btn btn-outline-secondary'>Все</button>
-      <button type='button'
-        className='btn btn-outline-secondary'>Активные</button>
-      <button type='button'
-        className='btn btn-outline-secondary'>Выполненые</button>
-    </div>
-  )
+class ItemStatusFilter extends Component {
+  render() {
+    return (
+      <div className="col offset-md-1 btn-group" id="btns">
+        <button type='button'
+          className='btn btn-outline-secondary'>Все</button>
+        <button type='button'
+          className='btn btn-outline-secondary'>Активные</button>
+        <button type='button'
+          className='btn btn-outline-secondary'>Выполненые</button>
+      </div>
+    )
+  }
 }
 
-export default item - status - filter
+export default ItemStatusFilter;

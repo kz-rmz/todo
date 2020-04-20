@@ -3,9 +3,9 @@ import './app-header.css';
 
 const AppHeader = ({ todo, done }) => {
   return (
-    <div className="todo-header d-flex row">
-      <h1>Список задач</h1>
-      <h2>Задач осталось: {todo}, Сделано: {done}</h2>
+    <div className="row todo-header">
+      <h1 className="col-sm">Список задач</h1>
+      <h2 className="col-sm">Задач осталось: {todo} Сделано: {done}</h2>
     </div >
   )
 }
