@@ -1,0 +1,14 @@
+.add-item {
+  margin-top: 2rem;
+}
+
+.add-item input {
+  border-radius: 3px;
+  border: 1px solid #aaa;
+}
+
+.add-item input[type=text]{
+  font-size: 1.5rem;
+  color: var(--black);
+  padding: .25rem .30rem;
+}
