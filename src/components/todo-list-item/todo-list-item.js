@@ -24,7 +24,7 @@ class TodoListItem extends Component {
   }
   //---Component
   render() {
-    const { label } = this.props;
+    const { label, onDeleted } = this.props;
     const { done, important } = this.state;
     let classNames = 'todo-list-item';
     if (done) {
@@ -38,15 +38,17 @@ class TodoListItem extends Component {
         <span className="todo-list-item-label">{label}</span>
         <div className="todo-list-item-btns">
           <button type='button'
-            className='btn btn-outline-secondary'
+            className='btn btn-outline-info'
             onClick={this.onImportant}
           ><i className="fa fa-star"></i></button>
           <button type='button'
-            className='btn btn-outline-secondary'
+            className='btn btn-outline-success'
             onClick={this.onDone}
           ><i className="fa fa-check"></i></button>
           <button type='button'
-            className='btn btn-outline-secondary'><i className="fa fa-trash-o"></i></button>
+            className='btn btn-outline-danger'
+            onClick={onDeleted}
+          ><i className="fa fa-trash-o"></i></button>
         </div>
       </span >
     )

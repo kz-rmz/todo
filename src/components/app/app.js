@@ -14,13 +14,16 @@ const App = () => {
   ]
 
   return (
-    <div className="col-md-6 app">
+    <div className="col-sm-10 col-md-8 col-xl-5 app">
       <AppHeader className="row" />
       <div id="search" className="row">
         <SearchPanel />
         <ItemStatusFilter />
       </div>
-      <ToDoList className="row" todos={todoData} />
+      <ToDoList className="row"
+        todos={todoData}
+        onDeleted={(id) => console.log(id)}
+      />
     </div >
   )
 }
