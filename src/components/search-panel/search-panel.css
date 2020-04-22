@@ -2,10 +2,6 @@
   flex-grow: 1;
 }
 
-.search-panel input {
-  border: 1px solid #aaa;
-  border-radius: 3px;
-}
 
 .search-panel input[type=text]{
   font-size: 1.5rem;

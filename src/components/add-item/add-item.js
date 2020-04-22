@@ -3,9 +3,7 @@ import './add-item.css';
 
 class AddItem extends Component {
   state = {
-    label: null,
-    important: false,
-    id: null
+    label: null
   }
   addItem = (e) => {
     e.preventDefault();
