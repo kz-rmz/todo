@@ -2,7 +2,6 @@ import React from 'react';
 import './app-header.css';
 
 const AppHeader = ({ todo, done }) => {
-  console.log(todo)
   return (
     <div className="row todo-header">
       <h1 className="col-sm">Список задач</h1>

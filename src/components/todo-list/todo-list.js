@@ -12,12 +12,13 @@ const ToDoList = ({ todos, onDeleted, onToggleImportant, onToggleDone }) => {
           onToggleImportant={() => { onToggleImportant(item.id) }}
           onToggleDone={() => { onToggleDone(item.id) }}
         />
-
       </li>
     )
   }
   );
+
   return (
+
     <ul className="list-group todo-list row">
       {elements}
     </ul>

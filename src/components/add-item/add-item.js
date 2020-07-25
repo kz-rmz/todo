@@ -3,11 +3,14 @@ import './add-item.css';
 
 class AddItem extends Component {
   state = {
-    label: null
+    label: ''
   }
   addItem = (e) => {
     e.preventDefault();
     this.props.addTodo(this.state);
+    this.setState({
+      label: ''
+    })
   }
 
   handleChange = (e) => {
@@ -21,7 +24,7 @@ class AddItem extends Component {
     return (
       <div className="add-item">
         <form className="row" onSubmit={this.addItem}>
-          <input type="text" className="col-8" id="label" onChange={this.handleChange} />
+          <input type="text" value={this.state.label} placeholder="Введите задачу" className="col-8" id="label" onChange={this.handleChange} />
           <input type="submit" value="Добавить" className="offset-md-1 col btn btn-success" onClick={this.addItem} />
         </form>
       </div>
